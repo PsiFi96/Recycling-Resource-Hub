@@ -173,6 +173,7 @@ public class ResourceHub {
 
  }
  
+ //Pause before returning
  try {
      Thread.sleep(4500);
  } catch (InterruptedException e) {
@@ -219,6 +220,7 @@ public class ResourceHub {
 
  }
 
+ //Pause before returning
  try {
      Thread.sleep(2000);
  } catch (InterruptedException e) {
@@ -257,6 +259,8 @@ if (totalItems > 20) {
 } else {
 	System.out.println("Status: Good start! Keep it up!.");
 }
+
+//Pause before returning
 try {
     Thread.sleep(2500);
 } catch (InterruptedException e) {
@@ -276,6 +280,7 @@ System.out.println("\n------ Returning To Main Menu -----\n");
  System.out.println("\nRecycling Tips & Education selected.");
 
  System.out.println("\n------ Tips to Improve Recycling -----\\n");
+ 
  System.out.println("1. Make sure the item is clean and dry, food waste can contanimate entire loads!"
  		+ "\n2. Don't recycle materials that are mixed, as they cannot be sorted properly."
  		+ "\n3. Be certain what your recycling is actually recyclable, as sorting takes a lot of time and failure can contanimate loads!"
@@ -286,13 +291,16 @@ System.out.println("\n------ Returning To Main Menu -----\n");
 		 + "\nhttps://www.recycleacrossamerica.org/tips-to-recycle-right"
 		 + "\nhttps://www.earthday.org/7-tips-to-recycle-better/"
 		 + "\nhttps://kingcounty.gov/en/dept/dnrp/waste-services/garbage-recycling-compost/services/recycling/how-to-recycle-right");
-
+ 
+ //Pause before returning
  try {
      Thread.sleep(6000);
  } catch (InterruptedException e) {
 	 System.out.println("Load Error Found");
  }
+ 
  System.out.println("\n------ Returning To Main Menu -----\n");
+ 
  }
 
  
@@ -303,8 +311,52 @@ System.out.println("\n------ Returning To Main Menu -----\n");
 
  System.out.println("\nRecycling Impact Calculator selected.");
 
- System.out.println("FOR FUTURE DEVELOPMENT");
-
+ double energySaved = 0; //this is measured in kWh
+ 
+ //Series of questions and variables stored based on response
+ System.out.println("How many plastic bottles have you recycled this week?");
+ int bottlesRecycled = scnr.nextInt();
+ energySaved += bottlesRecycled*0.1;
+ System.out.println("How many aluminum cans have you recycled this week?");
+ int cansRecycled = scnr.nextInt();
+ energySaved += cansRecycled*0.3;
+ System.out.println("How many pieces of paper have you recycled this week?");
+ int paperRecycled = scnr.nextInt();
+ energySaved += paperRecycled*0.01;
+ 
+ //Calculate the amount of lightbulbs saved, received as an int
+ int lightbulbsPowered = 0;
+ lightbulbsPowered = (int)(energySaved/0.1);
+ 
+ //Variables stored from previous questions used in printf statements 
+ System.out.printf("\nThis week you recycled %d plastic bottles, %d aluminum cans, and %d pieces of paper! Great work!", bottlesRecycled, cansRecycled, paperRecycled);
+ 
+ System.out.printf("\nBy doing this, you've saved enough energy to power %d 100-watt lightbulbs for an hour, which is %5.0f watts!", lightbulbsPowered, energySaved*1000);
+ 
+ //Branch that congratulates user based on calculated energy saved
+ if(energySaved >= 57.6) {
+	 System.out.println("You can even power a dishwasher for a day! Phenomenal work!");
+ }
+ if(energySaved >= 36) {
+	 System.out.println("You can even power an air conditioner for a day! Very cool!");
+ }
+ else if(energySaved >= 9.6) {
+	 System.out.println("You can even power a washing machine for a day! Nice!");
+ }
+ else {
+	 System.out.println("Keep up the great work!");
+ }
+ 
+ //Pause before returning
+ try {
+     Thread.sleep(6000);
+ } catch (InterruptedException e) {
+	 System.out.println("Load Error Found");
+ }
+ 
+ System.out.println("\n------ Returning To Main Menu -----\n");
+ 
+ 
  }
 
  
@@ -313,7 +365,7 @@ System.out.println("\n------ Returning To Main Menu -----\n");
 
  public static void exitProgram() {
 
- System.out.println("\nThank you for using our Recycling informatic");
+ System.out.println("\nThank you for using our Recycling informatic!");
 
  }
 
