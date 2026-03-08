@@ -131,13 +131,7 @@ public class ResourceHub {
 
  
 
- // FEATURE PLACEHOLDERS, Feel free to alter to your liking/exact desired feature, I tried to be general with these but set up ones that obviously lead into our required 'complex' features
-
- // do as you wish when it comes to files and stuff, I didn't set anything up but you guys can if you'd like
-
- 
-
- // Feature 1 (Probably just return text to the user)
+ // Feature 1 (Print out text to the user about recyclable materials)
 
  public static void recyclableMaterials() {
 
@@ -188,7 +182,7 @@ public class ResourceHub {
 
  
 
- // Feature 2 (Text return)
+ // Feature 2 (Return a recycling center based on user input)
 
  public static void recyclingCenters(Scanner scnr) {
 
@@ -233,7 +227,7 @@ public class ResourceHub {
 
  
 
- // Feature 3 (Array feature)
+ // Feature 3 (Create an array that represents a week to track how much the user has recycled)
 
  public static void trackRecyclingHabits(Scanner scnr) {
 
@@ -273,7 +267,7 @@ System.out.println("\n------ Returning To Main Menu -----\n");
 
  
 
- // Feature 4 (return text)
+ // Feature 4 (return text about recycling education)
 
  public static void recyclingEducation() {
 
@@ -305,7 +299,7 @@ System.out.println("\n------ Returning To Main Menu -----\n");
 
  
 
- // Feature 5 (Calculation required, maybe prompt them for some recycling facts and then do a calculation to determine how much they're helping)
+ // Feature 5 (Calculate how much energy a user saves by recycling certain objects, then compare how much they save to certain household objects)
 
  public static void recyclingImpactCalculator(Scanner scnr) {
 
@@ -361,7 +355,7 @@ System.out.println("\n------ Returning To Main Menu -----\n");
 
  
 
- // Feature 6
+ // Feature 6 (exit)
 
  public static void exitProgram() {
 
