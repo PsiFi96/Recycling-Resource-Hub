@@ -15,8 +15,11 @@ Within the five resources, it'll run it's specific task and then wait to allow t
 Upon the user's request, the program will terminate by the user inputting the associated input.  
   
 ## HOW TO USE:  
-Open the program inside of a local application that runs code, and run the program!  
+Open the program inside of a local application that runs code, and run the program! Interact with the terminal by inputting values when prompted to discover more about recycling! You can also discover more about your own impact when recycling through some of the features!  
 
 ## THANK YOU FOR USING RECYCLING RESOURCE HUB!  
-Project developed by Alexander Gosselin, Landon Theaker, William Palmeira, Tuan-Anh Pham Tran
-
+Project developed by Alexander Gosselin, Landon Theaker, William Palmeira, Tuan-Anh Pham Tran  
+Alexander handled Project Management and the initial interface.  
+William handled a good portion of the specific features and focused on creative implementation.  
+Landon handled some features as well, while also being the main manager of the GitHub.  
+Tuan-Anh handled a majority of the writing, as well as code review.
